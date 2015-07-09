@@ -6,6 +6,8 @@ This prerender service includes a removeScriptBeforeSave plugin. Which is respon
 With this you just process the removeScript once. To be able to achieve that I did some updates on s3HtmlCache but this change
 doesn't modify the normal behavior of s3HtmlCache, if you doesn't want to removeScriptTags before saving, you can use it normally.
 
+Added a new plugin event called from s3HtmlCache and inMemoryHtmlCache named "beforeSave".
+
 ##  Prerender Service 
 
 Google, Facebook, Twitter, Yahoo, and Bing are constantly trying to view your website... but they don't execute javascript. That's why we built Prerender. Prerender is perfect for AngularJS SEO, BackboneJS SEO, EmberJS SEO, and any other javascript framework.
